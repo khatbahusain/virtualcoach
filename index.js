@@ -92,7 +92,7 @@ function draw() {
     var AC = Math.sqrt(Math.pow(C.x - A.x, 2) + Math.pow(C.y - A.y, 2));
     
     let result = Math.acos((BC * BC + AB * AB - AC * AC) / (2 * BC * AB)) * 180 / Math.PI;
-    console.log(poses);
+    //console.log(poses);
 
     if (result > 160 && poses[0].keypoints[6].score > 0.5 && poses[0].keypoints[8].score > 0.5 && poses[0].keypoints[10].score > 0.5) {
       stage = "down";
